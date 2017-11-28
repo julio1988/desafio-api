@@ -14,7 +14,7 @@ import com.uds.desafio.api.model.Produto;
 public class DesafioApiApplicationTests {
 	
 	@Test
-	public void deve_retornar_fibonacci_posicao_2() {
+	public void calcularDesconto() {
 		Produto produto = new Produto();
 		produto.setNome("Produto Teste");
 		produto.setPreco(BigDecimal.valueOf(100));
