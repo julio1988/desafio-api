@@ -1,0 +1,684 @@
+{
+	"id": "6c576d47-9ffe-30f9-ab8f-f69a6e16835a",
+	"name": "Desafio UDS",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "CRUD Pessoa",
+			"description": "",
+			"collectionId": "6c576d47-9ffe-30f9-ab8f-f69a6e16835a",
+			"order": [
+				"434dd933-3798-6198-db97-7cfa26513fae",
+				"23da1fb3-a2c3-ab7b-447f-3e6209c3dd2a",
+				"4bbbfe0a-afb4-3f0d-a601-5857ad68b423",
+				"e3913105-a262-649f-7c5a-31a042052a07",
+				"3504662f-cf0e-9b01-a1ff-2338147ff664",
+				"3ed1c37c-aa55-3cdd-bc47-1b3523c970fd"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "67defaec-3944-8c71-6943-6c7e081137c4"
+		},
+		{
+			"name": "CRUD Produto",
+			"description": "",
+			"collectionId": "6c576d47-9ffe-30f9-ab8f-f69a6e16835a",
+			"order": [
+				"b9fef052-7ce6-121c-b8fb-e4f86e4fd897",
+				"d5f2095c-bd31-f64b-a157-d370a9a491fa",
+				"5376978e-02c0-ff02-5754-153d10a4e0c0",
+				"cd4ec326-0d4f-0440-d396-925d2fe537af",
+				"bc4e4ffd-2eea-2fab-8c44-24499e528dc8",
+				"746baaf6-85d6-0c86-73b3-739debbc298d"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "8b09e2d2-f055-a00a-5a35-641703d28713"
+		},
+		{
+			"name": "Registrar Pedido",
+			"description": "",
+			"collectionId": "6c576d47-9ffe-30f9-ab8f-f69a6e16835a",
+			"order": [
+				"8c7e7797-93f3-0ce2-5ade-1c1b7f25e8cc",
+				"19117c19-3f35-cbff-5364-fa032e31e9c0",
+				"39655cc5-260e-5ca1-7a4c-4e0636593c79",
+				"0c5b3fd7-c8ac-9ac1-0b16-a9ce571af7e4"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "b72f4521-5312-ef8e-fb87-2cdec6faa42f"
+		}
+	],
+	"folders_order": [
+		"67defaec-3944-8c71-6943-6c7e081137c4",
+		"8b09e2d2-f055-a00a-5a35-641703d28713",
+		"b72f4521-5312-ef8e-fb87-2cdec6faa42f"
+	],
+	"timestamp": 1511797812738,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "0c5b3fd7-c8ac-9ac1-0b16-a9ce571af7e4",
+			"headers": "Authorization: Basic YWRtaW46YWRtaW4=\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/pedidos?cliente=Agnaldo Rayol&numero=1&emissao=2017-11-27",
+			"queryParams": [
+				{
+					"key": "cliente",
+					"value": "Agnaldo Rayol",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "numero",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "emissao",
+					"value": "2017-11-27",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "6c576d47-9ffe-30f9-ab8f-f69a6e16835a",
+			"data": null,
+			"dataMode": "params",
+			"name": "Pesquisar Pedidos",
+			"description": "Pesquisar por numero, cliente (nome), emissao",
+			"descriptionFormat": "html",
+			"time": 1511888492468,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "b72f4521-5312-ef8e-fb87-2cdec6faa42f"
+		},
+		{
+			"id": "19117c19-3f35-cbff-5364-fa032e31e9c0",
+			"headers": "Authorization: Basic YWRtaW46YWRtaW4=\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/pedidos",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1511884725738,
+			"name": "Lançar Pedido",
+			"description": "",
+			"collectionId": "6c576d47-9ffe-30f9-ab8f-f69a6e16835a",
+			"responses": [],
+			"rawModeData": "{\n    \"emissao\": \"2017-11-27\",\n    \"cliente\": {\n        \"id\": \"7f628114-4427-461b-8b53-62b2101de0ef\"\n    },\n    \"total\":100.0,\n    \"itensPedido\": [{\"produto\":{\"id\":\"427aecd2-9085-409b-8948-cb77b9639a43\"}, \"quantidade\":5, \"percentualDesconto\":0},\n                    {\"produto\":{\"id\":\"427aecd2-9085-409b-8948-cb77b9639a43\"}, \"quantidade\":2, \"percentualDesconto\":10},\n                    {\"produto\":{\"id\":\"427aecd2-9085-409b-8948-cb77b9639a43\"}, \"quantidade\":1, \"percentualDesconto\":15}\n                   ]\n}"
+		},
+		{
+			"id": "23da1fb3-a2c3-ab7b-447f-3e6209c3dd2a",
+			"headers": "Authorization: Basic YWRtaW46YWRtaW4=\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/pessoas/7f628114-4427-461b-8b53-62b2101de0ef",
+			"folder": "67defaec-3944-8c71-6943-6c7e081137c4",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1511886040923,
+			"name": "Atualizar Pessoa",
+			"description": "",
+			"collectionId": "6c576d47-9ffe-30f9-ab8f-f69a6e16835a",
+			"responses": [],
+			"rawModeData": "{\n\t\"nome\" : \"Agnaldo Rayol\",\n\t\"dataNascimento\": \"1938-04-03\"\n}"
+		},
+		{
+			"id": "3504662f-cf0e-9b01-a1ff-2338147ff664",
+			"headers": "Authorization: Basic YWRtaW46YWRtaW4=\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/pessoas?nome=João Silva&dataNascimento=1988-06-10",
+			"folder": "67defaec-3944-8c71-6943-6c7e081137c4",
+			"queryParams": [
+				{
+					"key": "nome",
+					"value": "João Silva",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "dataNascimento",
+					"value": "1988-06-10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "admin",
+				"password": "admin",
+				"saveToRequest": true
+			},
+			"time": 1511806328023,
+			"name": "Filtrar por Nome e Data de Nascimento",
+			"description": "",
+			"collectionId": "6c576d47-9ffe-30f9-ab8f-f69a6e16835a",
+			"responses": []
+		},
+		{
+			"id": "39655cc5-260e-5ca1-7a4c-4e0636593c79",
+			"headers": "Authorization: Basic YWRtaW46YWRtaW4=\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/pedidos/6a4e3a2f-d9ce-477a-92a7-5648f53612f0",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "6c576d47-9ffe-30f9-ab8f-f69a6e16835a",
+			"data": null,
+			"dataMode": "params",
+			"name": "Excluir Pedido",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1511886188499,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "admin",
+				"password": "admin",
+				"saveToRequest": true
+			},
+			"folder": "b72f4521-5312-ef8e-fb87-2cdec6faa42f"
+		},
+		{
+			"id": "3ed1c37c-aa55-3cdd-bc47-1b3523c970fd",
+			"headers": "Authorization: Basic YWRtaW46YWRtaW4=\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/pessoas?size=4&page=1",
+			"queryParams": [
+				{
+					"key": "size",
+					"value": "4",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "page",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "6c576d47-9ffe-30f9-ab8f-f69a6e16835a",
+			"data": null,
+			"dataMode": "params",
+			"name": "Lista Paginada de Pessoas",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1511803390213,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "admin",
+				"password": "admin",
+				"saveToRequest": true
+			},
+			"folder": "67defaec-3944-8c71-6943-6c7e081137c4"
+		},
+		{
+			"id": "434dd933-3798-6198-db97-7cfa26513fae",
+			"headers": "Authorization: Basic YWRtaW46YWRtaW4=\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/pessoas",
+			"folder": "67defaec-3944-8c71-6943-6c7e081137c4",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1511884723185,
+			"name": "Nova Pessoa",
+			"description": "",
+			"collectionId": "6c576d47-9ffe-30f9-ab8f-f69a6e16835a",
+			"responses": [],
+			"rawModeData": "{\n\t\"nome\" : \"Julio Cesar Marques de Mendonça\",\n\t\"dataNascimento\": \"1988-10-28\"\n}"
+		},
+		{
+			"id": "4bbbfe0a-afb4-3f0d-a601-5857ad68b423",
+			"headers": "Authorization: Basic YWRtaW46YWRtaW4=\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/pessoas/c4611af4-ac9a-4cb7-b31e-c3be3b9cbe2b",
+			"folder": "67defaec-3944-8c71-6943-6c7e081137c4",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1511884728053,
+			"name": "Delete Pessoa",
+			"description": "",
+			"collectionId": "6c576d47-9ffe-30f9-ab8f-f69a6e16835a",
+			"responses": []
+		},
+		{
+			"id": "5376978e-02c0-ff02-5754-153d10a4e0c0",
+			"headers": "Authorization: Basic YWRtaW46YWRtaW4=\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/produtos/427aecd2-9085-409b-8948-cb77b9639a43",
+			"folder": "8b09e2d2-f055-a00a-5a35-641703d28713",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1511885067956,
+			"name": "Excluir Produto",
+			"description": "",
+			"collectionId": "6c576d47-9ffe-30f9-ab8f-f69a6e16835a",
+			"responses": []
+		},
+		{
+			"id": "746baaf6-85d6-0c86-73b3-739debbc298d",
+			"headers": "Authorization: Basic YWRtaW46YWRtaW4=\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/produtos?size=4&page=1",
+			"queryParams": [
+				{
+					"key": "size",
+					"value": "4",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "page",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "6c576d47-9ffe-30f9-ab8f-f69a6e16835a",
+			"data": null,
+			"dataMode": "params",
+			"name": "Lista Paginada de Produtos",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1511809928503,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "8b09e2d2-f055-a00a-5a35-641703d28713"
+		},
+		{
+			"id": "8c7e7797-93f3-0ce2-5ade-1c1b7f25e8cc",
+			"headers": "Authorization: Basic YWRtaW46YWRtaW4=\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/pedidos",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "6c576d47-9ffe-30f9-ab8f-f69a6e16835a",
+			"data": null,
+			"dataMode": "params",
+			"name": "Listar Pedidos",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1511821234439,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "b72f4521-5312-ef8e-fb87-2cdec6faa42f"
+		},
+		{
+			"id": "b9fef052-7ce6-121c-b8fb-e4f86e4fd897",
+			"headers": "Authorization: Basic YWRtaW46YWRtaW4=\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/produtos",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "6c576d47-9ffe-30f9-ab8f-f69a6e16835a",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Novo Produto",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1511806975875,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "8b09e2d2-f055-a00a-5a35-641703d28713",
+			"rawModeData": "    {\n        \"codigo\": 11,\n        \"nome\": \"Tablet Samsung Galaxy Tab A T280 8GB Wi-Fi Tela 7\",\n        \"preco\": 426.30\n    }"
+		},
+		{
+			"id": "bc4e4ffd-2eea-2fab-8c44-24499e528dc8",
+			"headers": "Authorization: Basic YWRtaW46YWRtaW4=\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/produtos?codigo=1&nome=Impressora HP Laser&preco=695.63",
+			"folder": "8b09e2d2-f055-a00a-5a35-641703d28713",
+			"queryParams": [
+				{
+					"key": "codigo",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "nome",
+					"value": "Impressora HP Laser",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "preco",
+					"value": "695.63",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1511809824992,
+			"name": "Pesquisar Produto por Codigo, Nome ou Preço",
+			"description": "",
+			"collectionId": "6c576d47-9ffe-30f9-ab8f-f69a6e16835a",
+			"responses": []
+		},
+		{
+			"id": "cd4ec326-0d4f-0440-d396-925d2fe537af",
+			"headers": "Authorization: Basic YWRtaW46YWRtaW4=\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/produtos",
+			"folder": "8b09e2d2-f055-a00a-5a35-641703d28713",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1511885074855,
+			"name": "Listar Produtos",
+			"description": "",
+			"collectionId": "6c576d47-9ffe-30f9-ab8f-f69a6e16835a",
+			"responses": []
+		},
+		{
+			"id": "d5f2095c-bd31-f64b-a157-d370a9a491fa",
+			"headers": "Authorization: Basic YWRtaW46YWRtaW4=\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/produtos/427aecd2-9085-409b-8948-cb77b9639a43",
+			"folder": "8b09e2d2-f055-a00a-5a35-641703d28713",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1511886032643,
+			"name": "Atualizar Produto",
+			"description": "",
+			"collectionId": "6c576d47-9ffe-30f9-ab8f-f69a6e16835a",
+			"responses": [],
+			"rawModeData": "{\n        \"codigo\": 49,\n        \"nome\": \"Impressora Epon T20 Térmica\",\n        \"preco\": 500.63\t\n}"
+		},
+		{
+			"id": "e3913105-a262-649f-7c5a-31a042052a07",
+			"headers": "Authorization: Basic YWRtaW46YWRtaW4=\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWRtaW46YWRtaW4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/pessoas",
+			"folder": "67defaec-3944-8c71-6943-6c7e081137c4",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1511821038191,
+			"name": "Listar Pessoas",
+			"description": "",
+			"collectionId": "6c576d47-9ffe-30f9-ab8f-f69a6e16835a",
+			"responses": []
+		}
+	]
+}
